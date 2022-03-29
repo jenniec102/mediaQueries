@@ -321,3 +321,34 @@ a + a{
   width: 100%;
   height: 50vmin;
 }
+
+/* when the screen is past the max-width, none of the styles below will be applied */
+/* mobile view for home page will have all content in one column */
+@media only screen and (max-width: 576px){
+  #home{
+    background-color: blue;
+  }
+
+  /* make navigation bar appear as a column rather than a row */
+  .nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5vh;
+  }
+
+  /* decrease padding of navbar buttons */
+  .nav a{
+    padding: 1.5vh;
+  }
+
+  .mainBlock .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+
+
+}
