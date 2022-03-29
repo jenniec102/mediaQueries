@@ -1,0 +1,323 @@
+/* using Nunito from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  line-height: 2em;
+}
+
+.difFont *{
+  font-family: 'Chelsea Market', cursive;
+}
+
+body{
+  background-color: darkgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5vh;
+  background-color: #BABABA;
+  margin-bottom: 5vh;
+  width: 80vw;
+}
+
+.nav li{
+  list-style: none;
+}
+
+.nav a{
+  display: flex;
+  text-decoration: none;
+  color: black;
+  padding: 2vh;
+}
+
+.nav a:hover{
+  background-color: lightgray;
+  color: rgb(255, 255, 179); /* lightyellow; */
+}
+
+#home{
+  /* muted yellow */
+  background-color: #E6DB86;
+  background-image: url(https://assets-api.kathmandupost.com/thumb.php?src=https://assets-cdn.kathmandupost.com/uploads/source/news/2021/opinion/shutterstock1917137108-1636020626.jpg&w=900&height=601);
+  background-attachment: fixed;
+  background-repeat: repeat-y;
+  background-position: 28vw;
+  background-size: contain;
+}
+
+#effects{
+  /* muted orange  */
+  background-color: #e6ae81;
+}
+
+#examples{
+  /* gray blue */
+  background-color: #9CB4D7;
+}
+
+#benefits{
+  /* muted coral */
+  background-color: #D99B82;
+}
+
+#sources{
+  /* darker muted yellow */
+  background-color: #E0CB85;
+  margin: 0 15vmin 0 15vmin;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3vh 5vh 8vh 5vh;
+}
+
+.main h1{
+  font-size: 3.5em;
+  padding-bottom: 0;
+  text-shadow: 0.5vmin 0 0 lightgray;
+}
+
+.main h2{
+  padding: 0;
+}
+
+.mainBlock{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5vmin;
+  justify-content: center;
+  margin: 5vmin 10vmin;
+}
+
+.mainBlock h3{
+  padding: 5vmin;
+  background-color: #E6DB86;
+  border-style: solid;
+  border-color: gray;
+  border-radius: 10vmin;
+  border-width: thin;
+  text-align: center;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainBlock img{
+  max-height: 40vh;
+  max-width: 50%;
+}
+
+.mainBlock .row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.mainContent{
+  display: flex;
+  justify-content: center;
+}
+
+.mainContent p{
+  background-color: lightgray;
+  padding: 6vmin;
+  border-radius: 5vmin;
+  max-width: 70%;
+  text-indent: 2em;
+}
+
+#noMargin{
+  margin-bottom: 0;
+}
+
+.header{
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 90vmin;
+  width: 100%;
+}
+
+.content .header{
+  background-image: url(https://cache.mrporter.com/content/images/cms/ycm/resource/blob/1964922/7417f5d7d0a22a9368eec35d97d65362/opener-jpg-data.jpg/w1500_q80.jpg);
+  background-position: left;
+  filter: grayscale(20%);
+}
+
+.content .pic{
+  display: flex;
+  justify-content: center;
+
+}
+
+.content .pic img{
+  max-width: 100vmin;
+  max-height: 100vmin;
+}
+
+.bContent .header{
+  background-image: url(https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/wp-cms/uploads/2021/08/p-1-s-no-one-right-path-to-work-life-balancebut-there-are-plenty-of-wrong.jpg);
+  height: 90vmin;
+}
+
+.content, .bContent, .eContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 15vmin 0;
+}
+
+.allText{
+  padding-left: 35vmin;
+  padding-right: 25vmin;
+}
+
+.bContent .row, .content .row, #sources .row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5vmin;
+}
+
+.row .pic{
+  max-width: 46%
+}
+
+.row .text{
+  max-width: 46%;
+}
+
+.content .picture{
+  justify-content: center;
+}
+
+.content .picture img{
+  max-width: 30%;
+  max-height: 30%;
+  border-radius: 20vmin;
+}
+
+.bContent img{
+  max-height: 50vmin;
+  border-radius: 20vmin;
+}
+
+.content .row img{
+  max-width: 105%;
+  border-radius: 20vmin;
+}
+
+.sourceBlock a{
+  text-decoration: none;
+  color: gray;
+}
+
+.sourceBlock a:hover{
+  background-color: silver;
+}
+
+.eContent a{
+  color: navy;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  background-color: darkgray;
+  color: #E6DB86;
+}
+
+.eContent .picture{
+  filter: brightness(0.95);
+}
+
+.eContent .row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.eContent .rowTitle{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50vmin;
+}
+
+.eContent .row p{
+  border-radius: 15vmin;
+  padding: 5vmin;
+  width: 100%;
+}
+
+.dos, .donts{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5vmin;
+}
+
+.donts p{
+  background-color: silver;
+}
+
+.dos p{
+  background-color: lightgray;
+}
+
+.eContent img{
+  max-height: 50vmin;
+}
+
+.eContent .picture{
+  display: flex;
+  justify-content: center;
+}
+
+img{
+  border-radius: 20vmin;
+}
+
+/* style all a tags after another a tag */
+a + a{
+  margin-top: 1em;
+}
+
+#sources img{
+  max-height: 30vmin;
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+}
+
+.pic iframe{
+  width: 100%;
+  height: 50vmin;
+}
