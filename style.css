@@ -370,7 +370,7 @@ a + a{
   }
 
   .mainBlock img{
-    max-height: 30vh;
+    /* max-height: 30vh; */
     max-width: 100%;
   }
 
@@ -380,10 +380,5 @@ a + a{
     flex-direction: column;
     justify-content: space-around;
   }
-
-  .mainContent p{
-    /* font-size: 1.5em;   */
-  }
-
 
 }
