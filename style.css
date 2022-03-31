@@ -325,30 +325,65 @@ a + a{
 /* when the screen is past the max-width, none of the styles below will be applied */
 /* mobile view for home page will have all content in one column */
 @media only screen and (max-width: 576px){
-  #home{
-    background-color: blue;
-  }
 
   /* make navigation bar appear as a column rather than a row */
   .nav ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 5vh;
+    align-items: center;
+    margin: 0;
+    gap: 0;
   }
 
   /* decrease padding of navbar buttons */
   .nav a{
-    padding: 1.5vh;
+    padding: 1.5vh 1.5vh 0 1.5vh;
   }
 
+  /* change margins and center items */
+  .main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3vh 2vh 8vh 2vh;
+  }
+
+  /* make font size smaller */
+  .main h1{
+    font-size: 3em;
+  }
+
+  .main h2{
+    margin-bottom: 1em;
+  }
+
+  .mainBlock{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mainBlock h3{
+    border-width: thin;
+    max-width: 100%;
+  }
+
+  .mainBlock img{
+    max-height: 30vh;
+    max-width: 100%;
+  }
+
+  /* rows are now columns */
   .mainBlock .row{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
 
+  .mainContent p{
+    /* font-size: 1.5em;   */
+  }
 
 
 }
