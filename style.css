@@ -352,6 +352,7 @@ a + a{
 
   /* make font size smaller */
   .main h1{
+    text-align: center;
     font-size: 3em;
   }
 
